@@ -32,7 +32,7 @@ pipeline {
         success {
             echo "Pipeline completado! Para acceder a la app:"
             echo "1. Ejecuta manualmente: docker-compose up -d"
-            echo "2. Abre en tu navegador: http://$(hostname -I | awk '{print \$1}'):8000"
+            echo "2. Abre en tu navegador: http://\$(hostname -I | awk '{print \$1}'):8000"
         }
     }
 }
